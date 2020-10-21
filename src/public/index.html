@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mensajes KAFKA</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <h1>Mensajes KAFKA</h1>
+
+
+
+
+    <div class="row">
+        <div class="col-sm-6 p-5">
+    <div class="card">
+      
+        <input type="text" id="topic" value="myTopic" class="form-control" />
+        <button id="subscribe_btn" class="btn btn-primary">
+          Suscribir topic
+        </button>
+      
+    </div>
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6 p-5"> 
+
+    <div class="card">
+        
+          <textarea  id="mensaje" class="form-control"></textarea>
+          <button id="send" class="btn btn-primary btn-block">Enviar</button>
+          </button>
+        
+      </div>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-6 p-5"> 
+
+    <div id="output"></div>
+</div>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="kafka.js"></script>
+  </body>
+</html>
